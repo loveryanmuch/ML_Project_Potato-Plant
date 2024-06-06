@@ -33,3 +33,8 @@ def analyze_disney_movies_genre_gross(filepath):
     genre_gross_summary = disney_movies.groupby("genre").agg({"total_gross":"sum", "inflation_adjusted_gross":"sum"}).reset_index()
 
     return genre_gross_summary
+
+if __name__ == "__main__":
+    # Example usage
+    filepath = "path_to_your_disney_movies_dataset.csv"
+    print(analyze_disney_movies_genre_gross(filepath))
