@@ -28,6 +28,3 @@ class TestCustomAgg(unittest.TestCase):
         self.assertEqual(res.shape, (2, 2))
         self.assertListEqual(list(res['count']), [4, 6])
         self.assertListEqual(list(res['type']), ['Cherry', 'Oak'])
-
-if __name__ == '__main__':
-    unittest.main()
