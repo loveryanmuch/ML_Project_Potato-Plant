@@ -6,7 +6,3 @@ def url_encode(text):
         else:
             encoded_text.append(char)
     return ''.join(encoded_text)
-
-print(url_encode("Lighthouse Labs"))                            
-print(url_encode(" Lighthouse Labs  "))
-print(url_encode("blue is greener than purple for sure")) 
