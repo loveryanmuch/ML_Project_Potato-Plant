@@ -15,19 +15,6 @@ SELECT
 	 COALESCE("revenue", 0) AS "revenue"
 FROM analytics;
 
-SELECT 
-	 COALESCE("totalTransactionRevenue", ('(not set)')) AS "totalTransactionRevenue",  -- replace any NULL values in this columns with '(net set)'
-	 COALESCE("transactions", '(not set)') AS "transactions",
-	 COALESCE("sessionQualityDim", '(not set)') AS "sessionQualityDim",
-	 COALESCE("productRefundAmount",'(not set)') AS "productRefundAmount",
-	 COALESCE("currencyCode", '(not set)') AS "currencyCode",
-	 COALESCE("itemQuantity", '(not set)') AS "itemQuantity",
-	 COALESCE("itemRevenue",'(not set)') AS "itemRevenue",
-	 COALESCE("transactionRevenue", '(not set)') AS "transactionRevenue",
-	 COALESCE("transactionId", '(not set)') AS "transactionId",
-	 COALESCE("searchKeyword",'(not set)') AS "searchKeyword",
-	 COALESCE("eCommerceAction_option", '(not set)') AS "eCommerceAction_option"
-	 
 FROM all_sessions;
 
     2) Check if there is any NULL data I missed
