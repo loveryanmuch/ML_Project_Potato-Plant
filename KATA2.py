@@ -17,3 +17,7 @@ def conditional_sum(values: List[int], condition: str) -> int:
     parity = 0 if condition == "even" else 1
     return sum(x for x in values if x % 2 == parity)
 
+print(conditional_sum([1, 2, 3, 4, 5], "even")) 
+print(conditional_sum([1, 2, 3, 4, 5], "odd")) 
+print(conditional_sum([13, 88, 12, 44, 99], "even"))
+print(conditional_sum([], "odd"))
