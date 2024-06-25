@@ -7,9 +7,3 @@ print(instructorWithLongestName([
   {"name": "Ophilia", "course": "Web"},
   {"name": "Donald", "course": "Web"}
 ]))  
-
-print(instructorWithLongestName([
-  {"name": "Matthew", "course": "Data"},
-  {"name": "David", "course": "iOS"},
-  {"name": "Domascus", "course": "Web"}
-]))
